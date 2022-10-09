@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin Jnagid-Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".ham").hide();
+        });
+        $(document).ready(function(){
+            $(".cross").click(function(){
+                $(".menu").hide(2000);
+                $(".cross").hide();
+                $(".ham").show();
+            });
+            
+        });
+        $(document).ready(function(){
+           $(".ham").click(function(){
+            $(".menu").show(2000);
+            $(".ham").hide();
+            $(".cross").show();
+           });
+            
+        });
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="sidebar">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="Home.html" class="link">Home</a>
+                    </li>
+                    <li>
+                        <a href="About.html" class="link">About</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html" class="link">Contact</a>
+                    </li>
+                    <li>
+                        <a href="Services.html" class="link">Services</a>
+                    </li>
+                    <li>
+                        <a href="cv.html" class="link">CV</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <!-- <div class="icons"> -->
+                    <img src="cross.png" alt="" class="cross" height="30px" width="30px" >
+                    <img src="menu.png" alt="" class="ham" height="30px" width="30px" >
+                <!-- </div> -->
+
+                <div class="content">
+                    <h1>Hey! I'am Sachin Jangid</h1>
+                    <h2> A Web-Developer</h2>
+                    <h3>I work on HTML,CSS,Javascript,Bootstrap,and jQuery.</h3>
+                    <div class="btn">
+                        <button><a href="#" class="btn1">Contact-Us</a></button>
+                        <button><a href="#" class="btn1">Download CV</a></button>
+                    </div>
+                    <!-- <h4>Web developers design and build websites. <br>They are typically responsible for the appearance, of the site and technical aspects, such as site speed and how much traffic the site can handle..</h4> -->
+                </div>
+                <div class="content-img">
+                    <img src="man.png" alt="Human Being" height="500px" width="500px">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

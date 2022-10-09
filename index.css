@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* sidebar  */
+.sidebar{
+    display: flex;
+}
+/* menu  */
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(154, 154, 154);
+    width: 10vw;
+
+}
+.menu ul{
+    margin-top: -150px;
+}
+.menu ul li{
+
+    list-style: none;
+    margin-top: 65px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    
+}
+/* main-content */
+.main-content{
+    
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content h1{
+    font-size: 4rem;
+}
+.content h2{
+    justify-content: center;
+    font-size: 3rem;
+    display: flex;
+}
+.content h3{
+    font-size: 1.8rem;
+}
+.btn{
+    padding: 40px 0;
+
+display: flex;
+justify-content: center;
+}
+.btn button{
+    border: 0;
+    padding: 10px 20px ;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+.btn button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.btn button:hover{
+    
+    background-color: rgb(154, 154, 154);
+}
+.btn button:hover>a{
+   color: white;
+}
+.cross{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.ham{
+    position: absolute; 
+    top: 20px;
+    left: 30px;
+}
+/* menu hover  */
+.link{
+
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: inline-block;
+}
+.link::before ,
+.link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    /* background-color: red; */
+    /* background-image:linear-gradient(to right,red,blue,green) ; */
+    /* background-image:linear-gradient(to right,#6CD0FF,#1C2E4C) ; */
+    /* background-image:linear-gradient(to right,#970D1A,#4E204D) ; */
+    /* background-image:linear-gradient(to right,#E5A663,#FAEE9E) ; */
+    background-image:linear-gradient(to right,rgb(167, 165, 165),rgb(239, 236, 236)) ;
+    transform: scaleX(0);
+    transition: transform .25s;
+    
+}
+.link::before{
+    top: -3px;
+    transform-origin: left;
+}
+.link::after{
+    bottom: -3px;
+    transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after{
+    /* font-size: 20px; */
+    transform: scaleX(1);
+}
+
+
+
+/* About Page  */
+
+#Subpage-H1{
+   position: absolute;
+   top: 150px;
+   left: 520px;
+}
+#Subpage-Para1{
+    padding: 0 250px;
+}
+#contacthead{
+    position:absolute;
+    left: 50%;
+    top: 150px;
+}
+
+/* Form  */
+.form{
+    margin-top: 50px;
+}
+.form input{
+    font-size: 1.2rem;
+    padding: 5px;
+}
+.form label{
+   /* display: flex;
+   flex-direction: column; */
+   display: block;
+   font-size: 1.6rem;
+font-weight: bolder;
+padding: 20px 0 10px 0;
+}
+.form textarea{
+    display: block;
+    font-size: 1.2rem;
+}
+#button{
+    margin: auto;
+}
